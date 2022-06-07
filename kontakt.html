@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Moje css-->
+    <link rel="stylesheet" href="style-kontakt.css">
+        <!--Fonty-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--AOS - Animate on scroll library css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo"><img src="klauzury/newlogo-noname.png" alt="logo"></div>
+
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">DOMŮ</a>
+                <a href="o-mne.html">O MNĚ</a>
+                <a href="moje-prace.html">MOJE PRÁCE</a>
+                <a href="kontakt.html">KONTAKT</a>
+                  </div>
+ 
+                  <span class="moovement" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                  
+                  <script>
+                  function openNav() {
+                    document.getElementById("mySidenav").style.width = "300px";
+                    document.getElementById("mySidenav").style.height = "200px";
+                  }
+                  
+                  function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("mySidenav").style.height = "1000";
+                  }
+                  </script>
+
+
+
+        </div>
+    </nav>
+<div class="jmeno" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"></div>
+<div class="header"></div>
+
+    <div class="more-info-k" id="vs">
+
+        <form action="" method="post">
+                <br><br><br>
+            <label for="jmeno">Jméno</label>
+                <input type="text" name="jmeno" id="jmeno" placeholder="Vlož své jméno" required>
+
+                <br><br>
+
+                <label for="vek">Věk</label>
+                <input type="number" name="vek" id="vek" required>
+                
+                <br><br>
+
+            <label for="datum">Datum narození</label>
+                <input type="date" name="datum" id="datum" required>
+
+                <br><br>
+
+            <label for="email">E-Mail</label>
+                <input type="email" name="email" id="email" value="@" required>
+
+                <br><br>
+
+            <label for="pohlavi" >Pohlaví</label>
+                <input type="radio" name="pohlavi" id="muz"> Muž
+                <input type="radio" name="pohlavi" id="zena"> Žena
+                <input type="radio" name="pohlavi" id="jine"> Jiné
+            
+                <br><br>
+
+            <label for="pass">Vlož své heslo</label>
+                <input type="password" name="pass" id="pass" placeholder="heslo">
+
+                <br><br>
+
+            <label for="color"></label>
+                <input type="checkbox" name="color" id="cervena" disabled> Červená
+                <input type="checkbox" name="color" id="zelena" checked> Zelená
+                <input type="checkbox" name="color" id="modra"> Modrá
+
+                <br><br>
+
+            <label for="koment"></label>
+                <textarea name="koment" id="koment" cols="30" rows="10" placeholder="Zde vlož svůj komentář..."></textarea>
+
+                <br><br>
+
+                <input type="checkbox" name="" id="" checked> Souhlasím s podmínkami použití
+                <br><br>
+            <div class="buttons">
+                <input type="submit" value="ODESLAT">
+                <input type="reset" value="RESET">
+            </div>
+                            <br><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.789595740448!2d17.66422392617436!3d49.21958624216803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713734efd3cc5ef%3A0xe8e1f082cd031285!2zRG9tb3YgbWzDoWRlxb5lIDE!5e0!3m2!1scs!2scz!4v1648798785030!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </form>
+
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

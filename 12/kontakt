@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakty</title>
+        <!--Moje css-->
+    <link rel="stylesheet" href="style.css">
+        <!--Fonty-->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--AOS - Animate on scroll library css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo"><img src="logo0.png" alt="logo"></div>
+                <ul>
+                    <li><a href="index.html">text1</a></li>
+                    <li><a href="index.html">text2</a></li>
+                    <li><a href="index.html">text3</a></li>
+                    <li><a href="index.html">text4</a></li>
+                    <li><a href="index.html">text5</a></li>
+                </ul
+        ></div>
+    </nav>
+    <header>
+        <div class="container"></div>
+            
+            <h1 data-aos="fade-up" data-aos-duration="2000" class="cajovnah1">ČAJOVNA</h1>
+                <div class="testbounce scroll">
+                    <p>Scroll down to see more</p>
+                </div>
+            <div class="arrow bounce">
+                <a href="#vs" class="material-icons">expand_more</a>
+            </div>
+  
+  
+<section class="container">
+
+    <h1>Formuláře</h1>
+
+    <form action="" method="post">
+
+        <label for="jmeno">Jméno</label>
+            <input type="text" name="jmeno" id="jmeno" placeholder="Vlož své jméno">
+
+    </form>
+
+
+</section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+            <!--    <h1 class="downh1" id="vs">Skillbary</h1>   
+        
+
+
+
+
+
+
+
+
+
+  
+
+<section class="skillbar container">
+
+    <h4>HTML</h4>
+    <div class="bar">
+        <div class="skill1">80%</div>
+    </div>
+    <br>
+    <h4>CSS</h4>
+    <div class="bar">
+        <div class="skill2">60%</div>
+    </div>
+
+
+</section>
+-->
+  </header>
+
+
+
+<!--AOS - Animate on scroll library js-->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+
+</body> 
+</html>

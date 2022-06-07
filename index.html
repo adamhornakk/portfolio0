@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMŮ</title>
+
+                <!--Moje css-->
+        <link rel="stylesheet" href="style-main.css">
+
+                <!--Fonty-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+                <!--Ikonka šipky dolů-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+                <!--AOS - Animate on scroll library css-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        .header {
+            height: 90vh;
+            /*background-image: url(mac/background-6.png);*/
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <!------------------------Navigace------------------------>
+    <nav>
+        <div class="container">
+            <div class="logo"><img src="klauzury/newlogo-noname.png" alt="logo"></div>
+
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">DOMŮ</a>
+                <a href="o-mne.html">O MNĚ</a>
+                <a href="moje-prace.html">MOJE PRÁCE</a>
+                <a href="kontakt.html">KONTAKT</a>
+                  </div>
+
+    <!------------------------Navigace - Ikona otevření navigace------------------------>
+            <span class="moovement" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  
+  
+    <!------------------------Navigace - script------------------------>
+                  <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "300px";
+                        document.getElementById("mySidenav").style.height = "400px"; 
+                    }
+                    
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0px";
+                        document.getElementById("mySidenav").style.height = "0px"; 
+                    }
+                  </script>
+
+
+
+        </div>
+    </nav>
+
+
+    <!------------------------Jméno a Příjmení------------------------>
+<div class="jmeno" data-aos="fade-up-right" data-aos-duration="1500" data-aos-delay="200">
+    <h1 class="up">Adam <br> Horňák</h1>
+</div>
+
+<div class="header"></div>
+
+
+    <!------------------------Scroll text------------------------>
+<div class="testbounce scroll">
+    <p>Scroll down to see more</p>
+</div>
+
+
+    <!------------------------Scroll tlačítko------------------------>
+<div class="arrow bounce">
+<a href="#vs" class="material-icons">expand_more</a>
+</div>
+
+
+    <!------------------------Spodní část------------------------>
+    <div class="more-info" id="vs">
+
+        <img src="klauzury/Adam-Pointer1.png" alt="Adam pointer" style="float: left;">
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia atque quod quas minus assumenda eligendi et ab amet vero quam odit cum natus molestias, dolore velit, sequi veritatis iusto? Temporibus, incidunt? Deserunt facilis sequi vero repellendus velit earum eveniet modi veritatis. Quidem ullam iusto accusantium, facere explicabo consectetur quasi est! Harum doloremque totam, commodi magnam, aliquid atque veritatis ut laboriosam eos consequatur, ipsum possimus architecto? Repudiandae facilis veritatis inventore ipsam culpa, non dolorem magnam pariatur vel autem architecto dignissimos, porro placeat. Dignissimos incidunt, eos facere tempore earum minus modi laborum doloremque quibusdam rerum, repellat, cumque asperiores reprehenderit enim voluptatem iusto.</p>
+
+
+    </div>
+
+
+    <!------------------------SkillBary------------------------>
+
+    <h1 class="text-skillbary">Skillbary</h1>
+    <section class="skillbar">
+        <h4>HTML</h4>
+        <div class="bar">
+            <div class="skill1">80%</div>
+        </div>
+        <br>
+        <h4>CSS</h4>
+        <div class="bar">
+            <div class="skill2">60%</div>
+        </div>
+    
+    
+    </section>
+
+    <!------------------------Kontakt------------------------>
+<div class="kontakt">
+        <h1 class="text-kontakt">Kontakt</h1>
+<p>Adam Horňák</p>
+<p>21090ah@creativehill.cz</p>
+
+</div>
+    <!------------------------Scripty------------------------>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

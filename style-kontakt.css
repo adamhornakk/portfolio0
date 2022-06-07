@@ -1,0 +1,197 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    /*border: 1mm solid red;*/
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 100ms;
+    position: absolute;
+    width: 100%;
+}
+
+body {
+    background-color: #97425a27;
+    width: 100%;
+    text-align: center;
+}
+
+.logo img {
+    width: 65px;
+    padding-left: 10px;
+}
+
+.container {
+    background-color: #489FB5;    
+    height: 80px;
+}
+
+
+/*Navigace*/
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 1400px;
+}
+nav li {
+    padding: 30px;
+    padding-right: 50px;
+}
+
+nav .container {
+    margin: auto;
+    padding: 10px;
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/*COPIED - NAV SLIDE BAR*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #E08442;
+   /* background: rgb(113,15,60);
+    background: linear-gradient(149deg, rgba(113,15,60,1) 0%, rgba(176,8,173,1) 50%, rgba(89,0,255,1) 100%); */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+.moovement {
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+
+input {background-color: #ddd;}
+
+
+
+
+input[type="text"],
+input[type="pass"],
+textarea,
+select {
+    width: 10%;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid red;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+input[type="number"] {
+    text-align: center;
+    width: 3%;
+    border: 2px solid rgb(152, 152, 152);
+    border-radius: 10px;
+}
+
+input[type="email"] {
+    width: 15%;
+    border: 2px solid rgb(152, 152, 152);
+    border-radius: 10px;
+}
+input[type="password"] {
+    text-align: center;
+    width: 7%;
+    border: 2px solid rgb(152, 152, 152);
+    border-radius: 10px;
+}
+select {
+    width: 8%;
+    border: 2px solid rgb(152, 152, 152);
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    color: green;
+    font-size: 15px;
+    transition: 100ms;
+    cursor: pointer;
+}
+input[type="reset"]:hover {
+    color: red;
+    font-size: 15px;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 1000px) {
+    .scroll {display: none;}
+    .bounce {display: none;}
+    
+}
+
+@media screen and (max-height: 650px) {
+    .up {display: none;}
+    
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    40% {transform: translateY(-30px);}
+    50% {transform: translateY(0px);}
+    60% {transform: translateY(-20PX);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes testbounce {
+    0% {transform: translateY(0px);}
+    40% {transform: translateY(-20px);}
+    50% {transform: translateY(15px);}
+    60% {transform: translateY(-15px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes skill1 {
+    0% {width: 0%; }
+    100% {width: 80%; }
+}
+
+@keyframes skill2 {
+    0% {width: 0%;}
+    100% {width: 60%;}
+}
+

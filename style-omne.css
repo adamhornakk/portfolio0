@@ -1,0 +1,104 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    /*border: 1mm solid red;*/
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 100ms;
+}
+
+.header {
+    height: 90vh;
+    background-image: url(mac/background-6.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1.up {
+    position: absolute;
+   /* left: 200;
+    top: 350; 
+    padding-top: 300;
+    padding-left: 200;*/
+    margin-top: 300;
+    margin-left: 200;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150;
+    text-transform: uppercase;
+    color: #E08442;
+}
+
+/*Navigace*/
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 1400px;
+}
+nav li {
+    padding: 30px;
+    padding-right: 50px;
+}
+
+nav .container {
+    margin: auto;
+    padding: 10px;
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.more-info {
+    height: 100vh;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 48vw;
+
+}
+
+.arrow a {
+    animation: colorRotate 10s linear 0s infinite;
+    text-decoration: none;
+    font-size: 50px;
+  /*  border: solid 1px pink;  */
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+p {
+    font-size: 20px;
+    position: absolute;
+    bottom: 70px;
+    left: 44vw;
+}
+
+.testbounce {
+    animation: testbounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    40% {transform: translateY(-30px);}
+    50% {transform: translateY(0px);}
+    60% {transform: translateY(-20PX);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes testbounce {
+    0% {transform: translateY(0px);}
+    40% {transform: translateY(-20px);}
+    50% {transform: translateY(15px);}
+    60% {transform: translateY(-15px);}
+    100% {transform: translateY(0px);}
+}

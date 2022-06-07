@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Moje css-->
+    <link rel="stylesheet" href="style-main.css">
+        <!--Fonty-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--AOS - Animate on scroll library css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+.header {
+    height: 90vh;
+    background-image: url(mac/bckgrnd-omne.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo"><img src="klauzury/newlogo-noname.png" alt="logo"></div>
+
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">DOMŮ</a>
+                <a href="o-mne.html">O MNĚ</a>
+                <a href="moje-prace.html">MOJE PRÁCE</a>
+                <a href="kontakt.html">KONTAKT</a>
+                  </div>
+ 
+                  <span class="moovement" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                  
+                  <script>
+                  function openNav() {
+                    document.getElementById("mySidenav").style.width = "300px";
+                    document.getElementById("mySidenav").style.height = "200px";
+                  }
+                  
+                  function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("mySidenav").style.height = "1000";
+                  }
+                  </script>
+
+
+
+        </div>
+    </nav>
+
+
+</div>
+<div class="header"></div>
+<div class="testbounce scroll"></div>
+<div class="arrow bounce"></div>
+<div class="more-info-o" id="vs">ˇ
+
+
+    <h1 class="text-skillbary">Skillbary</h1>
+    <section class="skillbar">
+        <h4>HTML</h4>
+        <div class="bar">
+            <div class="skill1">80%</div>
+        </div>
+        <br>
+        <h4>CSS</h4>
+        <div class="bar">
+            <div class="skill2">60%</div>
+        </div>
+    
+    
+    </section>
+
+
+
+
+</div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
