@@ -182,7 +182,7 @@ nav .container {
 .kontakt {
     padding-top: 100px;
     width: 90%;
-    height: 90vh;
+    height: 80vh;
     display: inline-block;
 }
 
@@ -193,7 +193,7 @@ nav .container {
     font-weight: bold;
     padding-top: 1px;
     padding-bottom: 100px;
-    padding-left: 36vw;
+    padding-left: 37vw;
     color: var(--secondary-no-o);
 }
 
@@ -225,6 +225,13 @@ color: var(--secondary);
     color: #fff;
     font-weight: bold;
 }
+
+footer {
+    background-color: #222222;
+    height: 100px;
+}
+
+
 
 /*----------------------Animace - šipka dolů----------------------*/
 
@@ -314,8 +321,8 @@ color: var(--secondary);
     display: block;
     transition: 0.3s;
   }
-  
-.sidenav a:hover {
+
+.sidenav-ani a:hover {
     color: var(--primary);
     font-size: 26px;
   }
@@ -324,7 +331,7 @@ color: var(--secondary);
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 58px;
     margin-left: 50px;
   }
   
