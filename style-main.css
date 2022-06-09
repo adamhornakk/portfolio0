@@ -104,7 +104,7 @@ nav .container {
 }
 
 .more-info p {
-    padding-top: 150px;
+    padding-top: 110px;
     padding-right: 100px;
     margin-left: 600px;
     font-size: 25px;
@@ -157,7 +157,7 @@ nav .container {
     border-radius: 200px;
 }
 
-.kontakt a {
+/*.kontakt a {
     background-color: var(--main);
     color: var(--secondary);
     font-size: 80px;
@@ -170,6 +170,11 @@ nav .container {
     top: 30vh;
     left: 12vh;
     transition: 400ms;
+}*/
+
+.kontakt a {
+    text-decoration: none;
+    color: var(--primary);
 }
 
 .kontakt p {
@@ -182,7 +187,7 @@ nav .container {
 .kontakt {
     padding-top: 100px;
     width: 90%;
-    height: 90vh;
+    height: 74vh;
     display: inline-block;
 }
 
@@ -222,8 +227,32 @@ color: var(--secondary);
     bottom: 0px;
     left: 40.5vw;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color:  var(--primary);
     font-weight: bold;
+}
+
+footer {
+    background-color: #222222;
+    height: 150px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+footer p {
+    color: var(--primary);
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+footer img {
+    height: 60px;
+    padding: 20px;
+    transition: 0.2s;
+    position: relative;
+}
+
+footer img:hover {
+    height: 62px;
 }
 
 /*----------------------Animace - šipka dolů----------------------*/
@@ -243,7 +272,7 @@ color: var(--secondary);
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: 1px;
+    padding-top: 90px;
     padding-left: 36vw;
     color: var(--secondary-no-o);
 }
@@ -268,7 +297,7 @@ color: var(--secondary);
     margin-bottom: 20px;
 }
 .skill1 {
-    background-color: #64C345;
+    background-color: #ac0e28;
     width: 80%;
     text-align: right;
     color: white;
@@ -278,16 +307,26 @@ color: var(--secondary);
     border-radius: 100px;
 }
 .skill2 {
-    background-color: #c5d30b;
+    background-color: #e72a4a;
     width: 60%;
     text-align: right;
     color: white;
     padding: 20px;
     font-weight: bold;
-    animation: skill2 3s ease;
+    animation: skill2 4s ease;
     border-radius: 100px;
 }
 
+.skill3 {
+    background-color: #ff6f6f;
+    width: 10%;
+    text-align: right;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    animation: skill3 3s ease;
+    border-radius: 100px;
+}
 
 /*----------------------COPIED - NAV SLIDE BAR----------------------*/
 
@@ -307,15 +346,16 @@ color: var(--secondary);
   }
   
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 30px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: var(--primary);
     display: block;
     transition: 0.3s;
+    text-align: center;
   }
-  
-.sidenav a:hover {
+
+.sidenav-ani a:hover {
     color: var(--primary);
     font-size: 26px;
   }
@@ -324,7 +364,7 @@ color: var(--secondary);
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 58px;
     margin-left: 50px;
   }
   
@@ -383,6 +423,10 @@ color: var(--secondary);
     100% {width: 60%;}
 }
 
+@keyframes skill3 {
+    0% {width: 0%;}
+    100% {width: 10%;}
+}
 /*----------------------Formulář----------------------*/
 input {background-color: #ddd;}
 
