@@ -41,11 +41,15 @@
 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">DOMŮ</a>
-                <a href="o-mne.html">O MNĚ</a>
+                <div class="sidenav-ani">
+                <a href="#up">DOMŮ</a>
+                <a href="#vs">O MNĚ</a>
+                <a href="#sb">SKILLBARY</a>
+                <a href="#kontakt">KONTAKT</a>
+                <p style="text-align: center;">-------------------------------------</p>
                 <a href="moje-prace.html">MOJE PRÁCE</a>
-                <a href="kontakt.html">KONTAKT</a>
-                  </div>
+                </div>
+            </div>
 
     <!------------------------Navigace - Ikona otevření navigace------------------------>
             <span class="moovement" style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -71,7 +75,7 @@
 
 
     <!------------------------Jméno a Příjmení------------------------>
-<div class="jmeno" data-aos="fade-up-right" data-aos-duration="1500" data-aos-delay="200">
+<div class="jmeno" id="up" data-aos="fade-up-right" data-aos-duration="1500" data-aos-delay="200">
     <h1 class="up">Adam <br> Horňák</h1>
 </div>
 
@@ -104,7 +108,7 @@
 
     <!------------------------SkillBary------------------------>
 
-    <h1 class="text-skillbary">Skillbary</h1>
+    <h1 class="text-skillbary" id="sb">Skillbary</h1>
     <section class="skillbar">
         <h4>HTML</h4>
         <div class="bar">
@@ -115,15 +119,23 @@
         <div class="bar">
             <div class="skill2">60%</div>
         </div>
+        <br>
+        <h4>JS</h4>
+        <div class="bar">
+            <div class="skill3">10%</div>
+        </div>
     
     
     </section>
 
     <!------------------------Kontakt------------------------>
-<div class="kontakt">
+<div class="kontakt" id="kontakt">
         <h1 class="text-kontakt">Kontakt</h1>
+
+        <div data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="2000">
 <p>Adam Horňák</p>
-<p>21090ah@creativehill.cz</p>
+<p><a href="mailto:21090ah@creativehill.cz">21090ah@creativehill.cz</a> </p>
+        </div>
 
 </div>
     <!------------------------Scripty------------------------>
@@ -132,5 +144,13 @@
         AOS.init();
     </script>
 
+
+<footer>
+   <p>Klauzurní práce | Adam Horňák ©2022</p>
+  <a href="https://instagram.com/adamhornakk" target="_blank"><img src="klauzury/ico/instagram-c.png" alt="instagram"></a>
+  <a href="https://steamcommunity.com/id/HornyCZE" target="_blank"><img src="klauzury/ico/steam-c.png" alt="steam"></a>
+  <a href="https://open.spotify.com/user/bfxdnu9p2uuw0zrzyhizzi9xg" target="_blank"><img src="klauzury/ico/spotify-c.png" alt="spotify"></a>
+  <a href="mailto:21090ah@creativehill.cz"><img src="klauzury/ico/email.png" alt="email"></a>
+</footer>
 </body>
 </html>
